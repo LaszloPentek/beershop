@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <nav>
             <img src="./img/BeerCraftLogo.svg" alt="">
             <span>
-                <li>
+                <li class="nav-link">
                     <ol>Főoldal</ol>
                     <ol>Szálitás és fizetés</ol>
                     <ol>Legujabb termékek</ol>
@@ -31,41 +31,45 @@
     </header>
     <main>
         <section class="welcome">
-            <article class="welcome-card">
+            <article class="welcome-card products">
                 <h3>Termékeink</h3>
-                <button>Megnézem</button>
+                <button class="btn">Megnézem</button>
             </article>
-            <article class="welcome-card">
+            <article class="welcome-card brewing">
                 <h3>A fözés folyamata</h3>
-                <button>Megnézem</button>
+                <button class="btn">Megnézem</button>
             </article>
-            <article class="welcome-card">
+            <article class="welcome-card about">
                 <h3>Rólunk</h3>
-                <button>Megnézem</button>
+                <button class="btn">Megnézem</button>
             </article>
         </section>
-        <section class="action"  style="display: flex;">
-            <h2>Akciós termékek</h2>
-            <article>
-                <img src="./img/beer1.png" alt="">
-                <h3>Classic</h3>
-                <p>500,-FT</p>
-            </article>
-            <article>
-                <img src="./img/beerLevendula.png" alt="">
-                <h3>Levendula</h3>
-                <p>500,-FT</p>
-            </article>
-            <article>
-                <img src="./img/beerMegy.png" alt="">
-                <h3>Meggy</h3>
-                <p>500,-FT</p>
-            </article>
-            <article>
-                <img src="./img/beerMez.png" alt="">
-                <h3>Méz</h3>
-                <p>500,-FT</p>
-            </article>
+        <section class="action">
+
+                <h2>Akciós termékek</h2>
+            
+            <section class="action-cards">
+                <article class="action-card">
+                    <img src="./img/beer1.png" alt="">
+                    <h3>Classic</h3>
+                    <p>500,-FT</p>
+                </article>
+                <article class="action-card">
+                    <img src="./img/beerLevendula.png" alt="">
+                    <h3>Levendula</h3>
+                    <p>500,-FT</p>
+                </article>
+                <article class="action-card">
+                    <img src="./img/beerMegy.png" alt="">
+                    <h3>Meggy</h3>
+                    <p>500,-FT</p>
+                </article>
+                <article class="action-card">
+                    <img src="./img/beerMez.png" alt="">
+                    <h3>Méz</h3>
+                    <p>500,-FT</p>
+                </article>
+            </section>
         </section>
 
     </main>

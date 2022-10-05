@@ -1,48 +1,94 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: whitesmoke;
+  }
+  body{
+	background-color: whitesmoke;
+  }
+h1{
+	font-size: 4rem;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+h2{
+	font-size: 3rem;
 }
-body {
-	line-height: 1;
+h3{
+	font-size: 2rem;
 }
-ol, ul {
-	list-style: none;
+.btn{
+	font-size: 2rem;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.4);
 }
-blockquote, q {
-	quotes: none;
+
+/*----------------------Header------------------*/
+nav, .nav-link{
+	display: flex;
+	background-color: rgb(122, 247, 247);
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+/*---banner---*/
+.banner{
+	height: 600px;
+	background-image: url(./img/banner.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} 
+/*----------------------Main----------------*/
+/*--------welcome------*/
+.welcome{
+	display: flex;
+	justify-content: space-around;
+
+}
+.welcome-card{
+	display: flex;
+	background-color: blue;
+	width: 400px;
+	height: 320px;
+	outline: 10px solid whitesmoke;
+	margin-top: -8rem;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.products{
+	background-image: url(./img/products.png);
+	background-size: cover;
+}
+.brewing{
+	background-image: url(./img/brewing.png);
+	background-size: cover;
+}
+.about{
+	background-image: url(./img/abouth.png);
+	background-size: cover;
+}
+/*-----action----*/
+.action-cards{
+	display: flex;
+	justify-content: space-around;
+}
+.action{
+	text-align: center;
+}
+.action h2, .action h3, .action p{
+	color: black;
+}
+.action-card{
+	outline: 1px solid gray;
+	width: 350px;
+	height: 490px;
+	background-color: white;
+}
