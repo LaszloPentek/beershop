@@ -3,14 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
-	font-size: 10px;
-	color: whitesmoke;
+
+	/* color: whitesmoke; */
   }
   body{
 	background-color: whitesmoke;
   }
 h1{
-	font-size: 6rem;
+	font-size: 5rem;
 	letter-spacing: 2rem;
 	text-transform: uppercase;
 }
@@ -126,8 +126,77 @@ ol:hover, span:hover{
 	background-image: url(./img/formbg.png);
 	background-position: center;
 	height: 1000px;
-	margin: 0px 50px 100px 50px
+	margin: 0px 50px 100px 50px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
 }
 input{
+	font-size: 2rem;
+}
+.licence{
+	display: flex;
+	justify-content: flex-start;
+	gap: 1.5rem;
+	width: 100%;
+	padding: 1rem 4rem 1rem 4rem;
+	margin: 2rem 0 2rem 0;
+	font-size: 2rem;
+	text-align: start;
+
+}
+.licence input[type="checkbox"] {
+	margin-left: 3rem;
+	width: 2rem;
+}
+/*----tips-----*/
+.tips{
+	
+	/* display: flex; */
+}
+.tips h2{
+	text-align: center;
+}
+.tips-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tips-card{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 35rem;
+	width: 30rem;
+	box-shadow: rgb(0 0 0 /24%) 0px 3px 8px;
+}
+.big-card{
+	min-height: 40rem;
+	width: 36rem;
+}
+.tips-card img{
+	width: 100%;	
+}
+/*----------------------Footer----------------*/
+
+footer{
+	background-color: rgb(122, 247, 247);
+	text-align: center;
+}
+.footer-menu ul{
+	display: flex;
+	justify-content: center;
+}
+.footer-menu ul li{
+	font-size: 1.8rem;
+}
+.soc-icon ul{
+	display: flex;
+	justify-content: center;
+}
+.soc-icon ul li{
 	font-size: 2rem;
 }

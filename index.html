@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/31c9848dcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -72,19 +80,77 @@
             </section>
         </section>
         <section class="subscribe">
-            <h2>Feliratkozás hírlevélre</h2>
-            <form action="#">
-                
-                    <input type="text" placeholder="Az ön vezetékneve">
-                    <input type="text" placeholder="Az ön keresztneve">
-                    <input type="text" placeholder="Az ön e-mail címe">
-                    <label>
-                        <input type="checkbox">Hozzájárulok ahhoz, hogy a Home Beer Kft. a nevemet és e-mail címemet hírlevelezési céllal kezelje és a részemre gazdasági reklámot is tartalmazó email hírleveleket küldjön.
-                    </label>
-            </form>
+            <article>
+                <h2>Feliratkozás hírlevélre</h2>
+                <form action="#">
+                    
+                        <input type="text" placeholder="Az ön vezetékneve">
+                        <input type="text" placeholder="Az ön keresztneve">
+                        <input type="text" placeholder="Az ön e-mail címe">
+                        
+                        <label class="licence">
+                            <input type="checkbox">Hozzájárulok ahhoz, hogy a Home Beer Kft. a nevemet és e-mail címemet hírlevelezési céllal kezelje és a részemre gazdasági reklámot is tartalmazó email hírleveleket küldjön.
+                        </label>
+                        <input class="btn" type="submit" value="Feliratkozás">
+                </form>
+            </article>
+        </section>
+        <section class="tips">
+            <h2>Tippek és trükkök</h2>
+            <article class="tips-cards">
+                <article class="tips-card">
+                    <img src="./img/hutes.png" alt="">
+                    <h3>A hütésröl</h3>
+                    <p class="date">2022.06</p>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut inventore consectetur eligendi labore in, omnis esse voluptates saepe molestias ea dolorum...</p>
+                    <button class="btn">Részletek</button>
+                </article>
+                <article class="tips-card big-card">
+                    <img src="./img/fozo.png" alt="">
+                    <h3>A fözö</h3>
+                    <p class="date">2022.06</p>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut inventore consectetur eligendi labore in, omnis esse voluptates saepe molestias ea dolorum...</p>
+                    <button class="btn">Részletek</button>
+                </article>
+                <article class="tips-card">
+                    <img src="./img/sorkemia.png" alt="">
+                    <h3>Sör kémia</h3>
+                    <p class="date">2022.06</p>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut inventore consectetur eligendi labore in, omnis esse voluptates saepe molestias ea dolorum...</p>
+                    <button class="btn">Részletek</button>
+                </article>
+            </article>
+
         </section>
 
     </main>
+    <footer>
+        <section class="footer-menu">
+            <Ul>
+                <li>Sütik(cookie) kezelése</li>
+                <li>Adatvédelmi irányelvek</li>
+                <li>Impresszum</li>
+                <li>Kapcsolat</li>
+                <li>Vásárlási Feltételek</li>
+            </Ul>
+        </section>
+        <section class="soc-icon">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter"></i></li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </ul>
+        </section>
+        <p>COPYRIGHT ©2022</p>
+    </footer>
     
     
 </body>
