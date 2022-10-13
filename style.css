@@ -10,25 +10,29 @@
 	background-color: whitesmoke;
   }
 h1{
-	font-size: 5rem;
-	letter-spacing: 2rem;
+	font-size: 4rem;
+	letter-spacing: 1rem;
 	text-transform: uppercase;
+	color: white;
 }
 h2{
-	font-size: 4rem;
+	font-size: 3rem;
 }
 h3{
-	font-size: 3rem;
+	font-size: 2rem;
 }
 p{
 	font-size: 2rem;
 }
 .btn{
-	font-size: 2rem;
+	font-size: 1rem;
 	color: black;
 	background-color: rgba(255, 255, 255, 0.904);
 	border: none;
-	padding: 1rem;
+	padding: 0.5rem;
+	font-weight: bolder;
+	margin-top: 1rem;
+
 }
 .btn:hover{
 	background-color: darkgray;
@@ -57,7 +61,7 @@ ol:hover, span:hover{
 
 /*---banner---*/
 .banner{
-	height: 600px;
+	height: 750px;
 	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,1)), url(./img/banner.png);
 	background-size: cover;
 	background-position: center;
@@ -65,6 +69,12 @@ ol:hover, span:hover{
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+}
+.banner h2{
+	font-size: 2rem;
+	padding-top: 3rem;
+	color: white;
+
 }
 /*----------------------Main----------------*/
 /*--------welcome------*/
@@ -83,6 +93,7 @@ ol:hover, span:hover{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	color: white;
 }
 .products{
 	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/products.png);
@@ -123,7 +134,7 @@ ol:hover, span:hover{
 }
 /*---------form--------*/
 .subscribe{
-	background-image: url(./img/formbg.png);
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(./img/formbg.png);
 	background-position: center;
 	height: 1000px;
 	margin: 0px 50px 100px 50px;
@@ -131,7 +142,12 @@ ol:hover, span:hover{
 	text-align: center;
 	justify-content: center;
 	align-items: center;
+	color: white;
 
+}
+.subscribe h2{
+	padding-bottom: 5rem;
+	font-weight: bold;
 }
 input{
 	font-size: 2rem;
@@ -143,7 +159,7 @@ input{
 	width: 100%;
 	padding: 1rem 4rem 1rem 4rem;
 	margin: 2rem 0 2rem 0;
-	font-size: 2rem;
+	font-size: 1rem;
 	text-align: start;
 
 }
@@ -158,27 +174,40 @@ input{
 }
 .tips h2{
 	text-align: center;
+	margin: 80px;
 }
 .tips-cards{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 .tips-card{
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	min-height: 35rem;
-	width: 30rem;
+	min-height: 25rem;
+	width: 20rem;
 	box-shadow: rgb(0 0 0 /24%) 0px 3px 8px;
+	margin-bottom: 10rem;
 }
 .big-card{
-	min-height: 40rem;
-	width: 36rem;
+	min-height: 30rem;
+	width: 25rem;
+
 }
 .tips-card img{
 	width: 100%;	
+}
+.tips-card .text{
+	font-size: 1rem;
+}
+.tips-card .date{
+	font-size: 1rem;
+	align-items: flex-start;
+}
+.tips-card h3{
+	text-align: center;
 }
 /*----------------------Footer----------------*/
 
