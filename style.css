@@ -6,6 +6,9 @@
 
 	/* color: whitesmoke; */
   }
+  * li{
+	list-style: none;
+  }
   body{
 	background-color: whitesmoke;
   }
@@ -41,6 +44,10 @@ p{
 }
 
 /*----------------------Header------------------*/
+nav{
+	position: fixed;
+	width: 100%;
+}
 nav, .nav-link{
 	display: flex;
 	background-color: rgb(122, 247, 247);
@@ -49,7 +56,7 @@ nav, .nav-link{
 	align-items: center;
 }
 ol, span{
-	font-size: 2rem;
+	font-size: 1.2rem;
 	color: black;
 	padding-left: 1.5rem;
 
@@ -80,7 +87,7 @@ ol:hover, span:hover{
 /*--------welcome------*/
 .welcome{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 
 }
 .welcome-card{
@@ -90,10 +97,13 @@ ol:hover, span:hover{
 	height: 320px;
 	outline: 10px solid whitesmoke;
 	margin-top: -8rem;
+	margin-right: 25px;
+	margin-left: 25px;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	color: white;
+	box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .products{
 	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/products.png);
@@ -110,7 +120,7 @@ ol:hover, span:hover{
 /*-----action----*/
 .action-cards{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 .action{
 	text-align: center;
@@ -119,18 +129,21 @@ ol:hover, span:hover{
 	padding: 100px;
 	letter-spacing: 0.5rem;
 }
-.action h2, .action h3, .action p{
-	color: black;
-}
+
 .action-card{
 	outline: 1px solid gray;
 	width: 350px;
 	height: 490px;
 	background-color: white;
 	margin-bottom: 200px;
+	margin-left: 10px;
+	margin-right: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .action-card p{
-	color: red
+	color: red;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px black;
 }
 /*---------form--------*/
 .subscribe{
@@ -214,18 +227,30 @@ input{
 footer{
 	background-color: rgb(122, 247, 247);
 	text-align: center;
+
 }
 .footer-menu ul{
 	display: flex;
 	justify-content: center;
+	margin-left: 100px;
 }
 .footer-menu ul li{
-	font-size: 1.8rem;
+	font-size: 1.3rem;
+	margin-left: 20px;
 }
 .soc-icon ul{
 	display: flex;
 	justify-content: center;
+
+
 }
 .soc-icon ul li{
-	font-size: 2rem;
+	font-size: 1.8rem;
+	margin-top: 0.5rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+.copy{
+	font-size: 1rem;
 }
