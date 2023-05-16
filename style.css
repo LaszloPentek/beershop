@@ -55,13 +55,13 @@ nav, .nav-link{
 	justify-content: space-between;
 	align-items: center;
 }
-ol, span{
+li, span{
 	font-size: 1.2rem;
 	color: black;
 	padding-left: 1.5rem;
 
 }
-ol:hover, span:hover{
+li:hover, span:hover{
 	color: gray;
 	cursor: pointer;
 }
@@ -82,6 +82,9 @@ ol:hover, span:hover{
 	padding-top: 3rem;
 	color: white;
 
+}
+.beerCraftLogo{
+	width: 100px;
 }
 /*----------------------Main----------------*/
 /*--------welcome------*/
@@ -114,7 +117,7 @@ ol:hover, span:hover{
 	background-size: cover;
 }
 .about{
-	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/abouth.png);
+	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/about.png);
 	background-size: cover;
 }
 /*-----action----*/
