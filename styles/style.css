@@ -150,6 +150,7 @@ li a:hover, span:hover{
 	margin-bottom: 200px;
 	margin-left: 10px;
 	margin-right: 10px;
+	/* padding: 1000px; */
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .action-card p{
@@ -216,7 +217,7 @@ input{
 	width: 20rem;
 	box-shadow: rgb(0 0 0 /24%) 0px 3px 8px;
 	margin-bottom: 10rem;
-	/* padding: 10px; */
+	padding: 10px;
 }
 .big-card{
 	min-height: 30rem;
