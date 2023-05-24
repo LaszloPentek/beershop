@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/31c9848dcf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>BeerCraft</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="./img/BeerCraftLogo.svg" alt="logo" class="beerCraftLogo">
+            <!-- <img src="./img/BeerCraftLogo.svg" alt="logo" class="beerCraftLogo"> -->
             <ul class="nav-link">
-                <li>Főoldal</li>
-                <li>Szállítás és fizetés</li>
-                <li>Legújabb termékek</li>
-                <li>Kapcsolat</li>
+                <li><a href="#fooldal">Főoldal</a></li>
+                <li><a href="#action">Akciós termékek</a></li>
+                <li><a href="mailto:beercraft@email.hu">E-mail</a></li>
+                <li><a href="#subscribe">Hírlevél</a></li>
             </ul>
             <span>
                 <span>Keresés <i class="fa-solid fa-magnifying-glass"></i></span>
                 <span>Kosár (0) <i class="fa-solid fa-cart-shopping"></i></span>
             </span>
         </nav>
-        <div class="banner">
+        <div class="banner" id="fooldal">
             <h1>Minden ami sör</h1>
             <h2>Minöségi sörök széles választékban</h2>
         </div>
@@ -48,7 +48,7 @@
                 <button class="btn">Megnézem</button>
             </article>
         </section>
-        <section class="action">
+        <section id="action">
 
                 <h2>Akciós termékek</h2>
             
@@ -75,11 +75,10 @@
                 </article>
             </section>
         </section>
-        <section class="subscribe">
+        <section id="subscribe">
             <article>
                 <h2>Feliratkozás hírlevélre</h2>
-                <form action="#">
-                    
+                <form action="#">    
                         <input type="text" placeholder="Az őn vezetékneve">
                         <input type="text" placeholder="Az őn keresztneve">
                         <input type="text" placeholder="Az őn e-mail címe">
@@ -116,18 +115,17 @@
                     <button class="btn">Részletek</button>
                 </article>
             </article>
-
         </section>
-
     </main>
     <footer>
         <section class="footer-menu">
             <Ul>
-                <li>Sütik(cookie) kezelése</li>
-                <li>Adatvédelmi irányelvek</li>
-                <li>Impresszum</li>
-                <li>Kapcsolat</li>
-                <li>Vásárlási Feltételek</li>
+                <li><a href="">Sütik(cookie) kezelése</a></li>
+                <li><a href="">Adatvédelmi irányelvek</a></li>
+                <li><a href="">Impresszum</a></li>
+                <li><a href="">Kapcsolat</a></li>
+                <li><a href="">Vásárlási Feltételek</a></li>
+                <li>teszt</li>
             </Ul>
         </section>
         <section class="soc-icon">
@@ -146,8 +144,6 @@
             </ul>
         </section>
         <p class="copy">COPYRIGHT ©2022</p>
-    </footer>
-    
-    
+    </footer>   
 </body>
 </html>

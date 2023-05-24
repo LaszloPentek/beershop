@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
-
+	scroll-behavior: smooth;
 	/* color: whitesmoke; */
   }
   * li{
@@ -46,22 +46,31 @@ p{
 /*----------------------Header------------------*/
 nav{
 	position: fixed;
+	height: 100px;
 	width: 100%;
+	/* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 nav, .nav-link{
 	display: flex;
+	/* background-color: rgb(18, 198, 105); */
+	/* background-color: rgb(255 87 87); */
 	background-color: rgb(122, 247, 247);
 	text-align: center;
 	justify-content: space-between;
 	align-items: center;
+	
 }
-li, span{
+nav span {
+	margin-right: 20px;
+}
+li a, span{
 	font-size: 1.2rem;
 	color: black;
 	padding-left: 1.5rem;
 
 }
-li:hover, span:hover{
+li a:hover, span:hover{
 	color: gray;
 	cursor: pointer;
 }
@@ -69,7 +78,7 @@ li:hover, span:hover{
 /*---banner---*/
 .banner{
 	height: 750px;
-	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,1)), url(./img/banner.png);
+	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,1)), url(../img/banner.png);
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -109,15 +118,15 @@ li:hover, span:hover{
 	box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .products{
-	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/products.png);
+	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(../img/products.png);
 	background-size: cover;
 }
 .brewing{
-	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/brewing.png);
+	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(../img/brewing.png);
 	background-size: cover;
 }
 .about{
-	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(./img/about.png);
+	background-image:linear-gradient(rgba(0,0,0,0.111), rgba(0,0,0,0.3)), url(../img/about.png);
 	background-size: cover;
 }
 /*-----action----*/
@@ -125,10 +134,10 @@ li:hover, span:hover{
 	display: flex;
 	justify-content: center;
 }
-.action{
+#action{
 	text-align: center;
 }
-.action h2{
+#action h2{
 	padding: 100px;
 	letter-spacing: 0.5rem;
 }
@@ -149,8 +158,8 @@ li:hover, span:hover{
 	text-shadow: 1px 1px 1px black;
 }
 /*---------form--------*/
-.subscribe{
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(./img/formbg.png);
+#subscribe{
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../img/formbg.png);
 	background-position: center;
 	height: 1000px;
 	margin: 0px 50px 100px 50px;
@@ -161,27 +170,28 @@ li:hover, span:hover{
 	color: white;
 
 }
-.subscribe h2{
+#subscribe h2{
 	padding-bottom: 5rem;
 	font-weight: bold;
 }
 input{
-	font-size: 2rem;
+	font-size: 1.3rem;
 }
 .licence{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: 1.5rem;
-	width: 100%;
+	width: 70%;
 	padding: 1rem 4rem 1rem 4rem;
 	margin: 2rem 0 2rem 0;
 	font-size: 1rem;
 	text-align: start;
 
 }
+
 .licence input[type="checkbox"] {
 	margin-left: 3rem;
-	width: 2rem;
+	width: 1.3rem;
 }
 /*----tips-----*/
 .tips{
@@ -206,6 +216,7 @@ input{
 	width: 20rem;
 	box-shadow: rgb(0 0 0 /24%) 0px 3px 8px;
 	margin-bottom: 10rem;
+	/* padding: 10px; */
 }
 .big-card{
 	min-height: 30rem;
@@ -217,6 +228,7 @@ input{
 }
 .tips-card .text{
 	font-size: 1rem;
+	padding: 10px;
 }
 .tips-card .date{
 	font-size: 1rem;
@@ -257,3 +269,5 @@ footer{
 .copy{
 	font-size: 1rem;
 }
+
+
