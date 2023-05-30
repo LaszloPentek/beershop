@@ -74,7 +74,9 @@ li a:hover, span:hover{
 	color: gray;
 	cursor: pointer;
 }
-
+.hmenu{
+	display: none;
+}
 /*---banner---*/
 .banner{
 	height: 750px;
@@ -93,7 +95,7 @@ li a:hover, span:hover{
 
 }
 .beerCraftLogo{
-	width: 100px;
+	width: 150px;
 }
 /*----------------------Main----------------*/
 /*--------welcome------*/
@@ -269,6 +271,29 @@ footer{
 }
 .copy{
 	font-size: 1rem;
+}
+@media only screen and (max-width : 1800px) {
+
+}
+
+@media only screen and (max-width: 1000px){
+	.nav-link, .SearchBasket-Container{
+		display: none;
+	}
+	.hmenu{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		color: white;
+		background-color: black;
+		width: 3rem;
+		height: 3rem;
+		margin: 1.4rem;
+	}
+	main{
+		background-color: black;
+	}
 }
 
 
